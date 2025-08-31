@@ -30,14 +30,23 @@ export const LanguageSwitcher: React.FC = () => {
     }
 
     // Build new path with selected language
-    const newPath = `/${langCode}${pathSegments.length > 0 ? '/' + pathSegments.join('/') : ''}`;
+    let newPath = `/${langCode}`;
+    if (pathSegments.length > 0) {
+      newPath += `/${pathSegments.join('/')}`;
+    }
     console.log('New path:', newPath);
 
     // Change language first
-    i18n.changeLanguage(langCode);
+    i18n.changeLanguage(langCode).then(() => {
+      console.log('Language changed successfully to:', langCode);
+      // Navigate to the new path after language change is complete
+      navigate(newPath, { replace: true });
+    }).catch((error) => {
+      console.error('Failed to change language:', error);
+      // Still try to navigate even if language change fails
+      navigate(newPath, { replace: true });
+    });
 
-    // Navigate to the new path
-    navigate(newPath, { replace: true });
     setIsOpen(false);
   };
 

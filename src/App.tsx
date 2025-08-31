@@ -17,7 +17,11 @@ const LanguageWrapper: React.FC = () => {
     if (lang && supportedLanguages.includes(lang)) {
       if (i18n.language !== lang) {
         console.log('Changing language from', i18n.language, 'to', lang);
-        i18n.changeLanguage(lang);
+        i18n.changeLanguage(lang).then(() => {
+          console.log('Language changed successfully in LanguageWrapper to:', lang);
+        }).catch((error) => {
+          console.error('Failed to change language in LanguageWrapper:', error);
+        });
       }
     } else {
       console.log('Invalid language, redirecting to /en');
