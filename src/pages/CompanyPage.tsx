@@ -7,33 +7,48 @@ export const CompanyPage: React.FC = () => {
   if (i18n.language === 'zh') {
     return (
       <div className="container-custom py-16">
-        <h1 className="text-4xl font-bold mb-8 text-gray-900 dark:text-white">关于我们</h1>
-        <p className="text-gray-700 dark:text-gray-300 mb-8">在这个AI浪潮汹涌的时代，我们正努力将AI应用的开发从依赖直觉和运气的“炼金术”转变为一门可测试、可迭代、可优化的“工程学”。我们相信，成功的AI系统并非仅依赖于强大的模型，更在于其背后对“上下文”的精妙管理和运用。</p>
+        <div className="text-center mb-12">
+          <img src="/logo.svg" alt="nodal.link" className="w-24 h-24 mx-auto mb-6" />
+          <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">nodal.link</h1>
+          <p className="text-xl text-blue-600 dark:text-blue-400 font-medium">每一条信息都是节点，每一次连接都创造智能</p>
+        </div>
 
-        <h2 className="text-2xl font-semibold mt-12 mb-4 text-gray-900 dark:text-white">我们的使命 (Our Mission)</h2>
-        <p className="text-gray-700 dark:text-gray-300">我们的使命是赋能开发者和企业，<strong className="text-blue-600 dark:text-blue-400">通过提供领先的上下文工程解决方案，将AI应用开发从不确定性中解放出来，使其变得可靠、高效且可规模化</strong>。我们致力于帮助AI智能体在每一步执行任务时，都能够<strong className="text-blue-600 dark:text-blue-400">智能地组装出最优的上下文组合</strong>，从而确保任务的成功完成，并克服因上下文管理不当导致的“性能鸿沟”和“幻觉”问题。</p>
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-semibold mb-6 text-gray-900 dark:text-white">关于我们</h2>
+          <p className="text-gray-700 dark:text-gray-300 mb-8 text-lg leading-relaxed">
+            在AI的世界里，每一条信息都是一个节点，每一次连接都创造智能。我们是 <strong className="text-blue-600 dark:text-blue-400">nodal.link</strong>，专注于连接AI理解的节点，将分散的信息转化为智能的上下文网络。我们相信，成功的AI系统不仅依赖于强大的模型，更在于节点间精妙的连接与上下文的智能管理。
+          </p>
 
-        <h2 className="text-2xl font-semibold mt-12 mb-4 text-gray-900 dark:text-white">我们的愿景 (Our Vision)</h2>
-        <p className="text-gray-700 dark:text-gray-300">我们设想一个未来：<strong className="text-blue-600 dark:text-blue-400">所有的AI应用都能够拥有卓越的“记忆”和“理解”能力</strong>，不再受“上下文腐烂”或信息缺失的困扰，成为真正强大、智能且可信赖的伙伴。我们希望成为构建高质量AI应用的核心基石，让上下文工程成为每一家AI原生公司的核心竞争力。我们坚信，通过严谨的工程学方法和对极致工艺的追求，可以开创一个AI与人类更高效协作的新时代。</p>
+          <h2 className="text-2xl font-semibold mt-12 mb-4 text-gray-900 dark:text-white">我们的使命</h2>
+          <p className="text-gray-700 dark:text-gray-300 mb-8">
+            连接AI节点，构建智能系统。我们致力于<strong className="text-blue-600 dark:text-blue-400">将分散的AI信息节点智能连接</strong>，通过先进的上下文工程技术，帮助开发者和企业构建真正可靠、高效且可规模化的AI应用。
+          </p>
 
-        <h2 className="text-2xl font-semibold mt-12 mb-4 text-gray-900 dark:text-white">我们能做的事情 (Our Offerings)</h2>
-        <ol className="list-decimal pl-6 space-y-6 text-gray-700 dark:text-gray-300">
-          <li>
-            <strong>智能上下文持久化与记忆管理</strong>：会话内与跨会话记忆系统；学习与成长型Agent支持。
-          </li>
-          <li>
-            <strong>高级上下文检索与智能选择</strong>：两阶段精炼检索，模型驱动精选，多源信息融合。
-          </li>
-          <li>
-            <strong>上下文优化与高效压缩</strong>：自动总结、修剪与干扰规避，提升信息密度。
-          </li>
-          <li>
-            <strong>多智能体架构与上下文隔离</strong>：分层处理、并行隔离、工具与沙盒集成。
-          </li>
-          <li>
-            <strong>上下文质量评估与生成式基准测试</strong>：生成黄金数据集，量化评估检索与排序，诊断上下文腐烂。
-          </li>
-        </ol>
+          <h2 className="text-2xl font-semibold mt-12 mb-4 text-gray-900 dark:text-white">我们的愿景</h2>
+          <p className="text-gray-700 dark:text-gray-300 mb-8">
+            构建一个<strong className="text-blue-600 dark:text-blue-400">万物互联的AI智能网络</strong>，让每个AI系统都能拥有卓越的"记忆"和"理解"能力，通过智能的节点连接，创造出超越单体模型的集体智能。
+          </p>
+
+          <h2 className="text-2xl font-semibold mt-12 mb-4 text-gray-900 dark:text-white">核心服务</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+              <h3 className="font-semibold mb-3 text-blue-600 dark:text-blue-400">节点记忆管理</h3>
+              <p className="text-gray-700 dark:text-gray-300 text-sm">智能持久化与跨会话记忆系统，让AI拥有学习与成长能力</p>
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+              <h3 className="font-semibold mb-3 text-blue-600 dark:text-blue-400">智能节点检索</h3>
+              <p className="text-gray-700 dark:text-gray-300 text-sm">两阶段精炼检索，模型驱动的智能节点选择与连接</p>
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+              <h3 className="font-semibold mb-3 text-blue-600 dark:text-blue-400">节点网络优化</h3>
+              <p className="text-gray-700 dark:text-gray-300 text-sm">自动压缩与优化，提升节点连接的信息密度与效率</p>
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+              <h3 className="font-semibold mb-3 text-blue-600 dark:text-blue-400">多节点架构</h3>
+              <p className="text-gray-700 dark:text-gray-300 text-sm">分层并行处理，构建复杂的智能节点网络系统</p>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
@@ -41,46 +56,96 @@ export const CompanyPage: React.FC = () => {
   if (i18n.language === 'fr') {
     return (
       <div className="container-custom py-16">
-        <h1 className="text-4xl font-bold mb-8 text-gray-900 dark:text-white">À propos de nous</h1>
-        <p className="text-gray-700 dark:text-gray-300 mb-8">À l'ère de l'IA, nous transformons le développement des applications d'une « alchimie » basée sur l'intuition en une ingénierie testable, itérable et optimisable. La réussite ne dépend pas uniquement des modèles, mais d'une gestion du contexte de haute précision.</p>
+        <div className="text-center mb-12">
+          <img src="/logo.svg" alt="nodal.link" className="w-24 h-24 mx-auto mb-6" />
+          <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">nodal.link</h1>
+          <p className="text-xl text-blue-600 dark:text-blue-400 font-medium">Chaque information est un nœud. Chaque connexion crée l'intelligence.</p>
+        </div>
 
-        <h2 className="text-2xl font-semibold mt-12 mb-4 text-gray-900 dark:text-white">Notre mission</h2>
-        <p className="text-gray-700 dark:text-gray-300">Donner aux équipes les moyens de <strong className="text-blue-600 dark:text-blue-400">créer des systèmes IA fiables, efficaces et scalables</strong> grâce à l'ingénierie de contexte, en <strong className="text-blue-600 dark:text-blue-400">assemblant le meilleur contexte à chaque étape</strong> pour éviter les hallucinations et fossés de performance.</p>
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-semibold mb-6 text-gray-900 dark:text-white">À propos de nous</h2>
+          <p className="text-gray-700 dark:text-gray-300 mb-8 text-lg leading-relaxed">
+            Dans le monde de l'IA, chaque information est un nœud, chaque connexion crée l'intelligence. Nous sommes <strong className="text-blue-600 dark:text-blue-400">nodal.link</strong>, spécialisés dans la connexion des nœuds de compréhension IA, transformant l'information dispersée en réseaux contextuels intelligents.
+          </p>
 
-        <h2 className="text-2xl font-semibold mt-12 mb-4 text-gray-900 dark:text-white">Notre vision</h2>
-        <p className="text-gray-700 dark:text-gray-300">Un futur où <strong className="text-blue-600 dark:text-blue-400">chaque application IA possède une mémoire et une compréhension de premier ordre</strong>, sans pourriture de contexte ni manque d'information. Nous voulons être l'infrastructure centrale des applications IA de qualité.</p>
+          <h2 className="text-2xl font-semibold mt-12 mb-4 text-gray-900 dark:text-white">Notre mission</h2>
+          <p className="text-gray-700 dark:text-gray-300 mb-8">
+            Connecter les nœuds IA pour des systèmes intelligents. Nous nous engageons à <strong className="text-blue-600 dark:text-blue-400">connecter intelligemment les nœuds d'information IA dispersés</strong>, aidant les développeurs et entreprises à construire des applications IA vraiment fiables, efficaces et évolutives.
+          </p>
 
-        <h2 className="text-2xl font-semibold mt-12 mb-4 text-gray-900 dark:text-white">Nos offres</h2>
-        <ol className="list-decimal pl-6 space-y-6 text-gray-700 dark:text-gray-300">
-          <li><strong>Persistance et mémoire de contexte</strong> : mémoire intra/inter-sessions ; agents apprenants.</li>
-          <li><strong>Recherche avancée et sélection intelligente</strong> : recherche en deux étapes, reranking LLM, fusion multi-sources.</li>
-          <li><strong>Optimisation et compression</strong> : résumés, pruning, réduction des interférences.</li>
-          <li><strong>Architecture multi-agents et isolation</strong> : traitement en parallèle, intégration outils/sandbox.</li>
-          <li><strong>Évaluation et benchmarking génératif</strong> : jeux d'or, mesures quantifiées, diagnostic de pourriture.</li>
-        </ol>
+          <h2 className="text-2xl font-semibold mt-12 mb-4 text-gray-900 dark:text-white">Notre vision</h2>
+          <p className="text-gray-700 dark:text-gray-300 mb-8">
+            Construire un <strong className="text-blue-600 dark:text-blue-400">réseau d'intelligence IA interconnecté</strong>, permettant à chaque système IA d'avoir des capacités exceptionnelles de "mémoire" et de "compréhension", créant une intelligence collective qui dépasse les modèles individuels.
+          </p>
+
+          <h2 className="text-2xl font-semibold mt-12 mb-4 text-gray-900 dark:text-white">Services principaux</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+              <h3 className="font-semibold mb-3 text-blue-600 dark:text-blue-400">Gestion mémoire des nœuds</h3>
+              <p className="text-gray-700 dark:text-gray-300 text-sm">Persistance intelligente et systèmes de mémoire inter-sessions</p>
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+              <h3 className="font-semibold mb-3 text-blue-600 dark:text-blue-400">Recherche intelligente de nœuds</h3>
+              <p className="text-gray-700 dark:text-gray-300 text-sm">Recherche raffinée en deux étapes, sélection intelligente pilotée par modèle</p>
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+              <h3 className="font-semibold mb-3 text-blue-600 dark:text-blue-400">Optimisation réseau de nœuds</h3>
+              <p className="text-gray-700 dark:text-gray-300 text-sm">Compression automatique et optimisation de la densité d'information</p>
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+              <h3 className="font-semibold mb-3 text-blue-600 dark:text-blue-400">Architecture multi-nœuds</h3>
+              <p className="text-gray-700 dark:text-gray-300 text-sm">Traitement parallèle en couches, systèmes de réseaux de nœuds complexes</p>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
 
   return (
     <div className="container-custom py-16">
-      <h1 className="text-4xl font-bold mb-8 text-gray-900 dark:text-white">About Us</h1>
-      <p className="text-gray-700 dark:text-gray-300 mb-8">We transform AI development from intuition-driven "alchemy" into an engineering discipline that is testable, iterable, and optimizable. Success comes not only from strong models, but from masterful context management.</p>
+      <div className="text-center mb-12">
+        <img src="/logo.svg" alt="nodal.link" className="w-24 h-24 mx-auto mb-6" />
+        <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">nodal.link</h1>
+        <p className="text-xl text-blue-600 dark:text-blue-400 font-medium">Every piece of information is a node. Every connection creates intelligence.</p>
+      </div>
 
-      <h2 className="text-2xl font-semibold mt-12 mb-4 text-gray-900 dark:text-white">Our Mission</h2>
-      <p className="text-gray-700 dark:text-gray-300">Empower teams to <strong className="text-blue-600 dark:text-blue-400">build reliable, efficient, and scalable AI systems</strong> through context engineering—<strong className="text-blue-600 dark:text-blue-400">assembling optimal context at every step</strong> to prevent hallucinations and performance gaps.</p>
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-3xl font-semibold mb-6 text-gray-900 dark:text-white">About Us</h2>
+        <p className="text-gray-700 dark:text-gray-300 mb-8 text-lg leading-relaxed">
+          In the world of AI, every piece of information is a node, every connection creates intelligence. We are <strong className="text-blue-600 dark:text-blue-400">nodal.link</strong>, specializing in connecting AI understanding nodes, transforming scattered information into intelligent contextual networks that power reliable AI systems.
+        </p>
 
-      <h2 className="text-2xl font-semibold mt-12 mb-4 text-gray-900 dark:text-white">Our Vision</h2>
-      <p className="text-gray-700 dark:text-gray-300">A future where <strong className="text-blue-600 dark:text-blue-400">every AI application has outstanding memory and understanding</strong>, free from context rot or missing information—trusted partners in real work.</p>
+        <h2 className="text-2xl font-semibold mt-12 mb-4 text-gray-900 dark:text-white">Our Mission</h2>
+        <p className="text-gray-700 dark:text-gray-300 mb-8">
+          Connecting AI nodes for intelligent systems. We are committed to <strong className="text-blue-600 dark:text-blue-400">intelligently connecting scattered AI information nodes</strong>, helping developers and enterprises build truly reliable, efficient, and scalable AI applications through advanced context engineering.
+        </p>
 
-      <h2 className="text-2xl font-semibold mt-12 mb-4 text-gray-900 dark:text-white">Our Offerings</h2>
-      <ol className="list-decimal pl-6 space-y-6 text-gray-700 dark:text-gray-300">
-        <li><strong>Context persistence & memory</strong>: intra/inter-session memory; learning agents.</li>
-        <li><strong>Advanced retrieval & selection</strong>: two-stage retrieval, LLM reranking, multi-source fusion.</li>
-        <li><strong>Optimization & compression</strong>: summarization, pruning, interference reduction.</li>
-        <li><strong>Multi-agent & isolation</strong>: layered, parallel processing; tools/sandbox integration.</li>
-        <li><strong>Evaluation & generative benchmarking</strong>: golden sets, quantified metrics, context rot diagnosis.</li>
-      </ol>
+        <h2 className="text-2xl font-semibold mt-12 mb-4 text-gray-900 dark:text-white">Our Vision</h2>
+        <p className="text-gray-700 dark:text-gray-300 mb-8">
+          Building an <strong className="text-blue-600 dark:text-blue-400">interconnected AI intelligence network</strong>, enabling every AI system to have exceptional "memory" and "understanding" capabilities, creating collective intelligence that transcends individual models through intelligent node connections.
+        </p>
+
+        <h2 className="text-2xl font-semibold mt-12 mb-4 text-gray-900 dark:text-white">Core Services</h2>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+            <h3 className="font-semibold mb-3 text-blue-600 dark:text-blue-400">Node Memory Management</h3>
+            <p className="text-gray-700 dark:text-gray-300 text-sm">Intelligent persistence and cross-session memory systems, enabling AI learning and growth</p>
+          </div>
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+            <h3 className="font-semibold mb-3 text-blue-600 dark:text-blue-400">Intelligent Node Retrieval</h3>
+            <p className="text-gray-700 dark:text-gray-300 text-sm">Two-stage refined retrieval, model-driven intelligent node selection and connection</p>
+          </div>
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+            <h3 className="font-semibold mb-3 text-blue-600 dark:text-blue-400">Node Network Optimization</h3>
+            <p className="text-gray-700 dark:text-gray-300 text-sm">Automatic compression and optimization, enhancing information density and efficiency of node connections</p>
+          </div>
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+            <h3 className="font-semibold mb-3 text-blue-600 dark:text-blue-400">Multi-Node Architecture</h3>
+            <p className="text-gray-700 dark:text-gray-300 text-sm">Layered parallel processing, building complex intelligent node network systems</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -26,24 +26,24 @@ export const Footer: React.FC = () => {
             </h4>
             <div className="space-y-2">
               <a
-                href="https://twitter.com"
+                href="https://twitter.com/nodallink"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 text-sm transition-colors"
+                className="block text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 text-sm transition-colors"
               >
                 Twitter
               </a>
               <a
-                href="https://github.com"
+                href="https://linkedin.com/company/nodallink"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 text-sm transition-colors"
+                className="block text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 text-sm transition-colors"
               >
-                GitHub
+                LinkedIn
               </a>
               <a
-                href="mailto:contact@nodal.link"
-                className="block text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 text-sm transition-colors"
+                href="mailto:hello@nodal.link"
+                className="block text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 text-sm transition-colors"
               >
                 Email
               </a>
@@ -60,7 +60,7 @@ export const Footer: React.FC = () => {
                 nodal.link
               </p>
               <p className="text-gray-600 dark:text-gray-400 text-sm">
-                Building the future of AI systems
+                Connecting AI nodes for intelligent systems
               </p>
             </div>
           </div>

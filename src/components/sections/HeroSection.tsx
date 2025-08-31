@@ -19,17 +19,17 @@ export const HeroSection: React.FC = () => {
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6 animate-fade-in">
             {t('home.title')}
           </h1>
-          
+
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 animate-slide-up">
             {t('home.subtitle')}
           </p>
-          
+
           {/* Description */}
           <p className="text-lg text-gray-500 dark:text-gray-400 mb-12 max-w-2xl mx-auto animate-slide-up">
             {t('home.description')}
           </p>
-          
+
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up">
             <button
@@ -41,7 +41,7 @@ export const HeroSection: React.FC = () => {
               }}
               className="btn-primary"
             >
-              Start Reading
+              {t('home.startReading')}
             </button>
             <button
               onClick={() => {
@@ -52,7 +52,7 @@ export const HeroSection: React.FC = () => {
               }}
               className="btn-secondary"
             >
-              Core Framework
+              {t('home.coreFramework')}
             </button>
           </div>
         </div>
