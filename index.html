@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>nodal.link — Context Engineering</title>
+  <meta name="description"
+    content="Context Engineering: From AI Alchemy to Engineering. Reliable, efficient, and scalable AI through better context." />
+
+  <script>
+    // Recover original path after GitHub Pages refresh (paired with 404.html)
+    (function () {
+      try {
+        var redirect = sessionStorage.getItem('redirect');
+        if (redirect) {
+          sessionStorage.removeItem('redirect');
+          var l = window.location;
+          var newUrl = redirect.startsWith('/') ? redirect : '/' + redirect;
+          if (l.pathname !== newUrl) {
+            window.history.replaceState(null, '', newUrl);
+          }
+        }
+      } catch (e) { }
+    })();
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
