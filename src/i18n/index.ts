@@ -131,6 +131,14 @@ const initOptions: InitOptions = {
   },
 };
 
-i18n.use(LanguageDetector).use(initReactI18next).init(initOptions);
+i18n.use(LanguageDetector).use(initReactI18next).init(initOptions)
+  .then(() => {
+    console.log('i18n initialized successfully');
+    console.log('Current language:', i18n.language);
+    console.log('Available resources:', Object.keys(i18n.getResourceBundle(i18n.language, 'translation') || {}));
+  })
+  .catch((error) => {
+    console.error('i18n initialization failed:', error);
+  });
 
 export default i18n;
