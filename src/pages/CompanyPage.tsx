@@ -22,15 +22,15 @@ export const CompanyPage: React.FC = () => {
         </div>
 
         <div className="text-center mb-12">
-          <img src="/logo.svg" alt="nodal.link" className="w-24 h-24 mx-auto mb-6" />
-          <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">nodal.link</h1>
+          <img src="/logo.svg" alt="NodalLink" className="w-24 h-24 mx-auto mb-6" />
+          <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">NodalLink</h1>
           <p className="text-xl text-blue-600 dark:text-blue-400 font-medium">每一条信息都是节点，每一次连接都创造智能</p>
         </div>
 
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-semibold mb-6 text-gray-900 dark:text-white">关于我们</h2>
           <p className="text-gray-700 dark:text-gray-300 mb-8 text-lg leading-relaxed">
-            在AI的世界里，每一条信息都是一个节点，每一次连接都创造智能。我们是 <strong className="text-blue-600 dark:text-blue-400">nodal.link</strong>，专注于连接AI理解的节点，将分散的信息转化为智能的上下文网络。我们相信，成功的AI系统不仅依赖于强大的模型，更在于节点间精妙的连接与上下文的智能管理。
+            在AI的世界里，每一条信息都是一个节点，每一次连接都创造智能。我们是 <strong className="text-blue-600 dark:text-blue-400">NodalLink</strong>，专注于连接AI理解的节点，将分散的信息转化为智能的上下文网络。我们相信，成功的AI系统不仅依赖于强大的模型，更在于节点间精妙的连接与上下文的智能管理。
           </p>
 
           <h2 className="text-2xl font-semibold mt-12 mb-4 text-gray-900 dark:text-white">我们的使命</h2>
@@ -84,15 +84,15 @@ export const CompanyPage: React.FC = () => {
         </div>
 
         <div className="text-center mb-12">
-          <img src="/logo.svg" alt="nodal.link" className="w-24 h-24 mx-auto mb-6" />
-          <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">nodal.link</h1>
+          <img src="/logo.svg" alt="NodalLink" className="w-24 h-24 mx-auto mb-6" />
+          <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">NodalLink</h1>
           <p className="text-xl text-blue-600 dark:text-blue-400 font-medium">Chaque information est un nœud. Chaque connexion crée l'intelligence.</p>
         </div>
 
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-semibold mb-6 text-gray-900 dark:text-white">À propos de nous</h2>
           <p className="text-gray-700 dark:text-gray-300 mb-8 text-lg leading-relaxed">
-            Dans le monde de l'IA, chaque information est un nœud, chaque connexion crée l'intelligence. Nous sommes <strong className="text-blue-600 dark:text-blue-400">nodal.link</strong>, spécialisés dans la connexion des nœuds de compréhension IA, transformant l'information dispersée en réseaux contextuels intelligents.
+            Dans le monde de l'IA, chaque information est un nœud, chaque connexion crée l'intelligence. Nous sommes <strong className="text-blue-600 dark:text-blue-400">NodalLink</strong>, spécialisés dans la connexion des nœuds de compréhension IA, transformant l'information dispersée en réseaux contextuels intelligents.
           </p>
 
           <h2 className="text-2xl font-semibold mt-12 mb-4 text-gray-900 dark:text-white">Notre mission</h2>
@@ -145,15 +145,15 @@ export const CompanyPage: React.FC = () => {
       </div>
 
       <div className="text-center mb-12">
-        <img src="/logo.svg" alt="nodal.link" className="w-24 h-24 mx-auto mb-6" />
-        <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">nodal.link</h1>
+        <img src="/logo.svg" alt="NodalLink" className="w-24 h-24 mx-auto mb-6" />
+        <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">NodalLink</h1>
         <p className="text-xl text-blue-600 dark:text-blue-400 font-medium">Every piece of information is a node. Every connection creates intelligence.</p>
       </div>
 
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-semibold mb-6 text-gray-900 dark:text-white">About Us</h2>
         <p className="text-gray-700 dark:text-gray-300 mb-8 text-lg leading-relaxed">
-          In the world of AI, every piece of information is a node, every connection creates intelligence. We are <strong className="text-blue-600 dark:text-blue-400">nodal.link</strong>, specializing in connecting AI understanding nodes, transforming scattered information into intelligent contextual networks that power reliable AI systems.
+          In the world of AI, every piece of information is a node, every connection creates intelligence. We are <strong className="text-blue-600 dark:text-blue-400">NodalLink</strong>, specializing in connecting AI understanding nodes, transforming scattered information into intelligent contextual networks that power reliable AI systems.
         </p>
 
         <h2 className="text-2xl font-semibold mt-12 mb-4 text-gray-900 dark:text-white">Our Mission</h2>

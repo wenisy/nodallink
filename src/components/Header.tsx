@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link, useLocation, useParams } from 'react-router-dom';
+import { Link, useLocation, useParams, useNavigate } from 'react-router-dom';
 
 export const Header: React.FC = () => {
   const { t } = useTranslation();
@@ -41,8 +41,8 @@ export const Header: React.FC = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${isScrolled
-          ? 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-lg'
-          : 'bg-transparent'
+        ? 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-lg'
+        : 'bg-transparent'
         }`}
     >
       <nav className="container-custom">

@@ -57,7 +57,7 @@ export const Footer: React.FC = () => {
             </h4>
             <div className="space-y-2">
               <p className="text-gray-600 dark:text-gray-400 text-sm">
-                nodal.link
+                NodalLink
               </p>
               <p className="text-gray-600 dark:text-gray-400 text-sm">
                 Connecting AI nodes for intelligent systems

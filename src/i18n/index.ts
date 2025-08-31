@@ -26,7 +26,7 @@ const resources = {
         pages: 'About Us',
       },
       home: {
-        title: 'nodal.link',
+        title: 'NodalLink',
         subtitle: 'Connecting AI Intelligence Through Context',
         description: 'We connect the nodes of AI understanding, transforming scattered information into intelligent, contextual networks that power reliable AI systems.',
         startReading: 'Start Reading',
@@ -61,7 +61,7 @@ const resources = {
         pages: '关于我们',
       },
       home: {
-        title: 'nodal.link',
+        title: 'NodalLink',
         subtitle: '通过上下文连接AI智能',
         description: '我们连接AI理解的节点，将分散的信息转化为智能的上下文网络，驱动可靠的AI系统。',
         startReading: '开始阅读',
@@ -96,7 +96,7 @@ const resources = {
         pages: 'À propos de nous',
       },
       home: {
-        title: 'nodal.link',
+        title: 'NodalLink',
         subtitle: 'Connecter l\'intelligence IA par le contexte',
         description: 'Nous connectons les nœuds de compréhension IA, transformant l\'information dispersée en réseaux contextuels intelligents qui alimentent des systèmes IA fiables.',
         startReading: 'Commencer la lecture',
