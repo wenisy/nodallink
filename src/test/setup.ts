@@ -1,4 +1,5 @@
 import '@testing-library/jest-dom'
+import React from 'react'
 
 // Mock i18next for tests
 vi.mock('react-i18next', () => ({
@@ -18,12 +19,12 @@ vi.mock('react-i18next', () => ({
 
 // Mock react-router-dom
 vi.mock('react-router-dom', () => ({
-  BrowserRouter: ({ children }: { children: React.ReactNode }) => children,
-  Link: ({ children, to, ...props }: any) => (
-    <a href={to} {...props}>
-      {children}
-    </a>
-  ),
+  BrowserRouter: ({ children }: { children: any }) => children,
+  Link: ({ children, to, ...props }: { children: any; to: string;[key: string]: any }) => {
+    return React.createElement('a', { href: to, ...props }, children)
+  },
   useNavigate: () => vi.fn(),
   useParams: () => ({ lang: 'en' }),
 }))
+
+

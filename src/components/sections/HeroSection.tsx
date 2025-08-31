@@ -4,9 +4,7 @@ import { useTranslation } from 'react-i18next';
 export const HeroSection: React.FC = () => {
   const { t, ready, i18n } = useTranslation();
 
-  // Debug: log current state
-  console.log('HeroSection - ready:', ready, 'language:', i18n.language);
-  console.log('HeroSection - home.title:', t('home.title'));
+
 
   // Show loading state if i18n is not ready
   if (!ready) {
