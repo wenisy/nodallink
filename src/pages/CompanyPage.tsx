@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 export const CompanyPage: React.FC = () => {
   const { i18n } = useTranslation();
@@ -7,6 +8,19 @@ export const CompanyPage: React.FC = () => {
   if (i18n.language === 'zh') {
     return (
       <div className="container-custom py-16">
+        {/* Back to Home Button */}
+        <div className="mb-8">
+          <Link
+            to="/zh"
+            className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+          >
+            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            返回首页
+          </Link>
+        </div>
+
         <div className="text-center mb-12">
           <img src="/logo.svg" alt="nodal.link" className="w-24 h-24 mx-auto mb-6" />
           <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">nodal.link</h1>
@@ -56,6 +70,19 @@ export const CompanyPage: React.FC = () => {
   if (i18n.language === 'fr') {
     return (
       <div className="container-custom py-16">
+        {/* Back to Home Button */}
+        <div className="mb-8">
+          <Link
+            to="/fr"
+            className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+          >
+            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            Retour à l'accueil
+          </Link>
+        </div>
+
         <div className="text-center mb-12">
           <img src="/logo.svg" alt="nodal.link" className="w-24 h-24 mx-auto mb-6" />
           <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">nodal.link</h1>
@@ -104,6 +131,19 @@ export const CompanyPage: React.FC = () => {
 
   return (
     <div className="container-custom py-16">
+      {/* Back to Home Button */}
+      <div className="mb-8">
+        <Link
+          to="/en"
+          className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+        >
+          <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          Back to Home
+        </Link>
+      </div>
+
       <div className="text-center mb-12">
         <img src="/logo.svg" alt="nodal.link" className="w-24 h-24 mx-auto mb-6" />
         <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">nodal.link</h1>
