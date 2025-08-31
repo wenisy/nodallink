@@ -114,7 +114,7 @@ const initOptions: InitOptions = {
   resources,
   fallbackLng: 'en',
   supportedLngs: ['en', 'zh', 'fr'],
-  debug: true, // Enable debug to see what's happening
+  debug: false,
   ns: ['translation'],
   defaultNS: 'translation',
   detection: {

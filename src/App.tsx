@@ -13,13 +13,8 @@ const LanguageWrapper: React.FC = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    console.log('Current lang from URL:', lang);
-    console.log('Current i18n language:', i18n.language);
-    console.log('i18n resources:', i18n.getResourceBundle(lang || 'en', 'home'));
-
     if (lang && supportedLanguages.includes(lang)) {
       if (i18n.language !== lang) {
-        console.log('Changing language to:', lang);
         i18n.changeLanguage(lang);
       }
     } else {
