@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 export const HeroSection: React.FC = () => {
-  const { t, ready, i18n } = useTranslation();
+  const { t, ready } = useTranslation();
 
 
 
