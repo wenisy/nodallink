@@ -17,18 +17,27 @@ export const LanguageSwitcher: React.FC = () => {
   const currentLanguage = languages.find(lang => lang.code === i18n.language) || languages[0];
 
   const handleLanguageChange = (langCode: string) => {
+    console.log('Language change requested:', langCode);
+    console.log('Current pathname:', location.pathname);
+
     const pathSegments = location.pathname.split('/').filter(Boolean);
-    
+    console.log('Path segments:', pathSegments);
+
     // Remove current language from path if it exists
     if (languages.some(lang => lang.code === pathSegments[0])) {
       pathSegments.shift();
+      console.log('Removed language from path, remaining segments:', pathSegments);
     }
-    
+
     // Build new path with selected language
     const newPath = `/${langCode}${pathSegments.length > 0 ? '/' + pathSegments.join('/') : ''}`;
-    
+    console.log('New path:', newPath);
+
+    // Change language first
     i18n.changeLanguage(langCode);
-    navigate(newPath);
+
+    // Navigate to the new path
+    navigate(newPath, { replace: true });
     setIsOpen(false);
   };
 
@@ -45,9 +54,8 @@ export const LanguageSwitcher: React.FC = () => {
             {currentLanguage.code.toUpperCase()}
           </span>
           <svg
-            className={`w-4 h-4 text-gray-500 transition-transform duration-200 ${
-              isOpen ? 'rotate-180' : ''
-            }`}
+            className={`w-4 h-4 text-gray-500 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''
+              }`}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -62,11 +70,10 @@ export const LanguageSwitcher: React.FC = () => {
               <button
                 key={language.code}
                 onClick={() => handleLanguageChange(language.code)}
-                className={`w-full flex items-center space-x-3 px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors ${
-                  currentLanguage.code === language.code
-                    ? 'bg-primary-50 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400'
-                    : 'text-gray-700 dark:text-gray-300'
-                }`}
+                className={`w-full flex items-center space-x-3 px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors ${currentLanguage.code === language.code
+                  ? 'bg-primary-50 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400'
+                  : 'text-gray-700 dark:text-gray-300'
+                  }`}
               >
                 <span className="text-xl">{language.flag}</span>
                 <div>

@@ -13,11 +13,14 @@ const LanguageWrapper: React.FC = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    console.log('LanguageWrapper effect - lang:', lang, 'current i18n language:', i18n.language);
     if (lang && supportedLanguages.includes(lang)) {
       if (i18n.language !== lang) {
+        console.log('Changing language from', i18n.language, 'to', lang);
         i18n.changeLanguage(lang);
       }
     } else {
+      console.log('Invalid language, redirecting to /en');
       // Redirect to default language if invalid language
       navigate('/en', { replace: true });
     }
