@@ -126,6 +126,8 @@ const initOptions: InitOptions = {
   },
   react: {
     useSuspense: false,
+    bindI18n: 'languageChanged loaded',
+    bindI18nStore: 'added removed',
   },
 };
 

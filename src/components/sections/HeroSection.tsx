@@ -2,7 +2,23 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 export const HeroSection: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, ready, i18n } = useTranslation();
+
+  // Debug: log current state
+  console.log('HeroSection - ready:', ready, 'language:', i18n.language);
+  console.log('HeroSection - home.title:', t('home.title'));
+
+  // Show loading state if i18n is not ready
+  if (!ready) {
+    return (
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 to-blue-100 dark:from-gray-900 dark:to-gray-800">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+          <p className="text-gray-600 dark:text-gray-400">Loading...</p>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 to-blue-100 dark:from-gray-900 dark:to-gray-800">
